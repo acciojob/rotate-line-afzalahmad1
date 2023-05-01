@@ -1,5 +1,15 @@
-/*  your css code here. If applicable */
-@keyframes rotate {
+#line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 2px;
+  background-color: black;
+  transform-origin: left center;
+  animation: rotateLine 2s infinite linear;
+}
+
+@keyframes rotateLine {
   from {
     transform: rotate(0deg);
   }
@@ -7,12 +17,3 @@
     transform: rotate(360deg);
   }
 }
-#line{
-	width:200px;
-	height:2px;
-	background-color:black;
-	animation-name: rotate;
-   animation-duration: 4s;
-}
-
-
